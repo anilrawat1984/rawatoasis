@@ -155,7 +155,7 @@
             /* ACTION REQUIRED:
                Replace this URL with your best exterior or view photo.
             */
-            background: url('https://placehold.co/1600x900/111111/FFFFFF?text=RISHIKESH+LUXURY+STAY') no-repeat center center/cover;
+            background: url('images/view 2.jpg') no-repeat center center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -568,6 +568,35 @@
             letter-spacing: 3px;
         }
 
+        .submit-button:disabled {
+            background: var(--text-muted);
+            cursor: not-allowed;
+        }
+
+        /* Success/Error Messages */
+        .form-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 0;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
         /* Footer */
         footer {
             background: var(--primary-color);
@@ -659,8 +688,9 @@
 
     <section id="home">
         <div class="container hero-content">
+			<br></br>
             <h1>The Rishikesh Retreat</h1>
-            <p>A private sanctuary of peace and luxury in the heart of the Himalayas.</p>
+            <p>Serene Escape in Rishikesh - Gateway to Nature's Bliss.</p>
             <div class="rating">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 
                 RATED **4.86/5 STARS**
@@ -674,13 +704,13 @@
             <h2>Luxury Meets Serenity</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/HmmeScreen.jpeg" alt="Rawat's Oasis">
+                    <img src="images/HomeScreen.jpg" alt="View from Rawat's Oasis">
                 </div>
                 <div class="about-text">
                     <p>Rawat's Oasis is a private, independent homestay designed for the discerning traveler seeking solace without sacrificing comfort. Our property in **Veerbhadra** offers a genuine, unplugged Rishikesh experience, removed from the crowds yet conveniently located near spiritual landmarks.</p>
                     <p>We offer two distinct, luxuriously appointed spaces: a generous **1BHK on the first floor** and a sophisticated **Studio Apartment on the second floor**. This dual configuration makes our oasis ideal for large families, two couples, or private, extended stays.</p>
                     <p>Every stay includes exclusive access to two vast **terraces** offering breathtaking, unobstructed mountain vistas. The soothing sound of a stream fed by the Ganges, just a 500-meter walk away, completes this unique setting. Experience exceptional service from your host, **Anil**, with seamless self check-in provided.</p>
-                    <p>Accommodation: Sleeps up to 6 guests, 2 bedrooms (King Beds), 3 bathrooms.</p>
+                    <p>Accommodation: Sleeps up to 7 guests, 2 bedrooms (King Beds), 3 bathrooms.</p>
                 </div>
             </div>
         </div>
@@ -691,12 +721,12 @@
             <h2>Our Distinction</h2>
             <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="counter" data-target="350">0</span>+
+                    <span class="counter" data-target="110">0</span>+
                     <p>GUESTS HOSTED</p>
                 </div>
                 <div class="stat-item">
-                    <span class="counter" data-target="95">0</span>%
-                    <p>LOCATION RATING</p>
+                    <span class="counter" data-target="9.5">0</span>%
+                    <p>Guest RATING</p>
                 </div>
                 <div class="stat-item">
                     <span class="counter" data-target="100">0</span>%
@@ -736,13 +766,13 @@
                 </div>
                 <div class="amenity-item">
                     <i class="fas fa-car-side"></i>
-                    <h3>Private On-Site Parking</h3>
+                    <h3>On-Site Parking</h3>
                     <p>Secure, free, and dedicated parking space is available.</p>
                 </div>
                 <div class="amenity-item">
                     <i class="fas fa-temperature-three-quarters"></i>
                     <h3>Air Conditioning (AC)</h3>
-                    <p>Climate control to ensure comfort during warmer months.</p>
+                    <p>All bedrooms has split ACs.</p>
                 </div>
             </div>
         </div>
@@ -753,28 +783,31 @@
             <h2>The Oasis Portfolio</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x350/111111/FFFFFF?text=Studio+Apt" alt="Studio apartment interior">
+                    <img src="images/Studio collage.jpg" alt="Studio Appartment">
                     <div class="gallery-item-caption">Studio Apartment</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x550/111111/FFFFFF?text=Mountain+View" alt="Mountain view from balcony">
-                    <div class="gallery-item-caption">Panoramic View</div>
+                    <img src="images/view 2.jpg" alt="Parmarth">
+                    
+					
+					<img src="images/ganges.jpeg" alt="Mountain view from Terrace">
+                    
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x450/111111/FFFFFF?text=1BHK+Living" alt="1BHK Living Room">
-                    <div class="gallery-item-caption">Living Area</div>
+                    <img src="images/1bhk collage.jpg" alt="1BHK Appartment">
+                    <div class="gallery-item-caption">1BHK Appartment</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x300/111111/FFFFFF?text=Bedroom" alt="Bedroom detail">
+                    <img src="images/Bedroom collage.jpg" alt="Bedroom detail">
                     <div class="gallery-item-caption">Bedroom Comfort</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/2.jpeg" alt="Terrace">
+                    <img src="images/Small terrace 1.jpg" alt="Terrace">
                     <div class="gallery-item-caption">Private Terrace</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x500/111111/FFFFFF?text=Exterior" alt="Homestay exterior">
-                    <div class="gallery-item-caption">The Facade</div>
+                    <img src="images/Full House.jpg" alt="Homestay exterior">
+                    <div class="gallery-item-caption">HomeStay</div>
                 </div>
             </div>
         </div>
@@ -787,6 +820,11 @@
             
             <div class="location-info">
                 <div class="location-detail">
+                    <i class="fas fa-route"></i>
+                    <strong>500 Meter</strong>
+                    <p>Ganges</p>
+                </div>
+				<div class="location-detail">
                     <i class="fas fa-route"></i>
                     <strong>2 KM</strong>
                     <p>National Highway Access</p>
@@ -803,21 +841,13 @@
                 </div>
                 <div class="location-detail">
                     <i class="fas fa-mountain-sun"></i>
-                    <strong>CLOSEST TO</strong>
-                    <p>Bairaj Dam & Chila</p>
+                    <strong>2 KM</strong>
+                    <p>Bairaj Dam & AIIMS</p>
                 </div>
             </div>
             
             <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11105.102377395562!2d78.29340916462791!3d30.10091480026933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092fe63065a38f%3A0xc3f60f64c66e2c34!2sVeerbhadra%2C%20Rishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.2330079792455!2d78.26498697362635!3d30.05885481789127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093f18a98229b1%3A0xf2528db1ba6152a3!2sRawat&#39;s%20Oasis!5e0!3m2!1sen!2sin!4v1759063590633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -828,19 +858,19 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><i class="fas fa-user-circle"></i> **Host: Anil** (Your dedicated host)</p>
-                    <p><i class="fas fa-envelope"></i> Email: your-email@example.com <br>**    **(Please update form script as well)</p>
-                    <p><i class="fas fa-phone-alt"></i> Phone: +91 98765 43210</p>
+                    <p><i class="fas fa-user-circle"></i> Host: Anil Rawat</p>
+                    <p><i class="fas fa-envelope"></i> Email: &nbsp;<a href="mailto:anilrawat_1984@yahoo.co.in">anilrawat_1984@yahoo.co.in</a></p>
+                    <p><i class="fas fa-phone-alt"></i> Phone: +91 8447154242 / 9354451592</p>
                     
                     <h3 style="margin-top: 40px;">Check-In & Policy</h3>
                     <p><i class="fas fa-clock"></i> **Check-In:** 12:00 PM onwards</p>
                     <p><i class="far fa-clock"></i> **Check-Out:** By 11:00 AM</p>
-                    <p><i class="fas fa-key"></i> **Entry:** **Self Check-in** via lockbox.</p>
+                    <p><i class="fas fa-key"></i> **Entry:** Self Check-in via lockbox.</p>
                     <p><i class="fas fa-shield-halved"></i> **Security:** Gated access, 24/7 power backup.</p>
                 </div>
                 
                 <div class="booking-form-container">
-                    <form class="booking-form" id="booking-form">
+                    <form class="booking-form" id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <h3>Secure Your Dates</h3>
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -859,21 +889,24 @@
                             <input type="date" id="checkout" name="checkout" required>
                         </div>
                         <div class="form-group">
-                            <label for="guests">Number of Guests (Max 6)</label>
+                            <label for="guests">Number of Guests (Max 7)</label>
                             <select id="guests" name="guests" required>
+                                <option value="">Select number of guests</option>
                                 <option value="1">1 Guest</option>
                                 <option value="2">2 Guests</option>
                                 <option value="3">3 Guests</option>
                                 <option value="4">4 Guests</option>
                                 <option value="5">5 Guests</option>
                                 <option value="6">6 Guests</option>
+								<option value="7">7 Guests</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Accommodation Preference (1BHK/Studio) & Special Requests</label>
+                            <label for="message">Accommodation Preference (1BHK Appartment, Studio Appartment or Both) & Special Requests</label>
                             <textarea id="message" name="message" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="submit-button">Submit Reservation Request</button>
+                        <button type="submit" class="submit-button" id="submit-btn">Submit Reservation Request</button>
+                        <div class="form-message" id="form-message"></div>
                     </form>
                 </div>
             </div>
@@ -890,6 +923,7 @@
         // --- 1. Date Restriction (Dynamic Check-in) ---
         (function() {
             const checkinInput = document.getElementById('checkin');
+            const checkoutInput = document.getElementById('checkout');
             const today = new Date();
             const year = today.getFullYear();
             let month = today.getMonth() + 1;
@@ -900,6 +934,14 @@
 
             const minDate = `${year}-${month}-${day}`;
             checkinInput.setAttribute('min', minDate);
+            
+            // Update checkout minimum date when checkin changes
+            checkinInput.addEventListener('change', function() {
+                const checkinDate = new Date(this.value);
+                checkinDate.setDate(checkinDate.getDate() + 1);
+                const minCheckout = checkinDate.toISOString().split('T')[0];
+                checkoutInput.setAttribute('min', minCheckout);
+            });
         })();
 
         // --- 2. Animated Counter (Dynamic Effect) ---
@@ -940,42 +982,46 @@
             `© ${new Date().getFullYear()} RAWAT'S OASIS HOMESTAY. ALL RIGHTS RESERVED.`;
 
 
-        // --- 4. Booking Form Submission (Uses Mailto) ---
-        document.getElementById('booking-form').addEventListener('submit', function(event) {
+        // --- 4. Formspree Form Submission Handler ---
+        document.getElementById('booking-form').addEventListener('submit', async function(event) {
             event.preventDefault();
             
-            const data = {
-                name: this.name.value,
-                email: this.email.value,
-                checkin: this.checkin.value,
-                checkout: this.checkout.value,
-                guests: this.guests.value,
-                message: this.message.value
-            };
+            const form = this;
+            const submitBtn = document.getElementById('submit-btn');
+            const messageDiv = document.getElementById('form-message');
+            const formData = new FormData(form);
             
-            const emailBody = `
-Booking Request for Rawat's Oasis Homestay (Via Website Form):
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            messageDiv.className = 'form-message';
+            messageDiv.style.display = 'none';
             
-Traveler Name: ${data.name}
-Email: ${data.email}
-
-Booking Details:
-- Check-in: ${data.checkin}
-- Check-out: ${data.checkout}
-- Number of Guests: ${data.guests}
-
-Accommodation Preference & Special Requests:
-${data.message || 'None'}
-            `;
-            
-            // ACTION REQUIRED: Replace 'your-email@example.com' with the actual host email for the form to work
-            const mailtoLink = `mailto:your-email@example.com?subject=RESERVATION REQUEST - Rawat's Oasis by ${data.name}&body=${encodeURIComponent(emailBody)}`;
-            
-            window.location.href = mailtoLink;
-            
-            alert('Thank you for your reservation request! Please complete the email that opens up. We will confirm your reservation within 24 hours.');
-            
-            this.reset();
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    messageDiv.className = 'form-message success';
+                    messageDiv.textContent = 'Thank you! Your reservation request has been received. We will contact you within 24 hours to confirm your booking.';
+                    messageDiv.style.display = 'block';
+                    form.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                messageDiv.className = 'form-message error';
+                messageDiv.textContent = 'Oops! There was a problem submitting your request. Please try again or contact us directly at anilrawat_1984@yahoo.co.in';
+                messageDiv.style.display = 'block';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Reservation Request';
+            }
         });
 
         // --- 5. Header Scroll Effect (Visual Dynamic) ---
