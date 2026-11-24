@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="google-site-verification" content="2IUr2v0LwEroCi0Yd0PvinXAqZF1CaDGFs5XCDw8X-I" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishikesh Homestay Near Ganga | Rawat's Oasis</title>
-    <meta name="description" content="Stay at Rawat's Oasis, a budget-friendly homestay in Veerbhadra, Rishikesh. Choose a private studio or 1BHK near the Ganga, with mountain views.">
+    <title>Pet-Friendly Homestay in Rishikesh | Rawat's Oasis</title>
+    <meta name="description" content="Stay at Rawat's Oasis, a pet-friendly homestay in Veerbhadra, Rishikesh. Choose a 1BHK or studio with a kitchen, private outdoor space and mountain views.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://rawatoasis.com/">
     <meta name="theme-color" content="#173c32">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="Rawat's Oasis">
-    <meta property="og:title" content="Rishikesh Homestay Near Ganga | Rawat's Oasis">
-    <meta property="og:description" content="A peaceful homestay in Veerbhadra, Rishikesh, with a private studio and 1BHK, mountain views and terraces. Enquire for rates and availability.">
+    <meta property="og:title" content="Pet-Friendly Homestay in Rishikesh | Rawat's Oasis">
+    <meta property="og:description" content="Stay in Veerbhadra, Rishikesh, in a pet-friendly 1BHK or studio apartment with a kitchen, private outdoor space and mountain views. Enquire about dates.">
     <meta property="og:url" content="https://rawatoasis.com/">
     <meta property="og:image" content="https://rawatoasis.com/Images/view%203.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rishikesh Homestay Near Ganga | Rawat's Oasis">
-    <meta name="twitter:description" content="A peaceful homestay in Veerbhadra, Rishikesh, with a private studio and 1BHK, mountain views and terraces.">
+    <meta name="twitter:title" content="Pet-Friendly Homestay in Rishikesh | Rawat's Oasis">
+    <meta name="twitter:description" content="Stay in Veerbhadra, Rishikesh, in a pet-friendly 1BHK or studio apartment with a kitchen, private outdoor space and mountain views.">
     <meta name="twitter:image" content="https://rawatoasis.com/Images/view%203.jpg">
     <link rel="preload" as="image" href="Images/view%203.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,12 +31,13 @@
       "name": "Rawat's Oasis",
       "url": "https://rawatoasis.com/",
       "image": "https://rawatoasis.com/Images/view%203.jpg",
-      "description": "A homestay in Veerbhadra, Rishikesh, with a private 1BHK and studio apartment, terraces, mountain views and access to a Ganges-fed stream.",
+    "description": "A pet-friendly homestay in Veerbhadra, Rishikesh, offering a private 1BHK and studio apartment with kitchens, outdoor spaces and mountain views.",
+    "petsAllowed": true,
       "telephone": "+91-8447154242",
       "email": "anilrawat_1984@yahoo.co.in",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Veerbhadra, Rishikesh",
+                "addressLocality": "Rishikesh",
         "addressRegion": "Uttarakhand",
         "addressCountry": "IN"
       },
@@ -945,6 +945,120 @@
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
+        /* Stay options and travel-first booking details */
+        :root {
+            --accent-color: #b66b45;
+            --light-bg: #f2f1e9;
+            --border-color: #deddd3;
+        }
+        .hero-content .cta-button { border-radius: 6px; }
+        .stay-section { background: #f2f1e9; }
+        .section-intro {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .stay-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 44px;
+        }
+        .stay-option {
+            min-width: 0;
+            overflow: hidden;
+            background: #fffdf8;
+            border: 1px solid var(--border-color);
+        }
+        .stay-option img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        .studio-bedroom-image { object-position: center bottom; }
+        .stay-option-content { padding: 28px clamp(20px, 3vw, 36px) 32px; }
+        .stay-label {
+            margin-bottom: 8px;
+            color: var(--accent-color);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+        .stay-option h3 { margin-bottom: 12px; font-size: 1.8rem; }
+        .stay-option-content > p:not(.stay-label) { line-height: 1.75; }
+        .stay-features {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 18px;
+            margin: 22px 0 26px;
+            padding: 0;
+            list-style: none;
+        }
+        .stay-features li { display: flex; gap: 10px; align-items: flex-start; font-size: .9rem; line-height: 1.5; }
+        .stay-features i { margin-top: 3px; color: var(--accent-color); }
+        .stay-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-size: .9rem;
+            font-weight: 700;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+        .travel-note {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            margin-top: 28px;
+            padding: 22px 26px;
+            background: #173c32;
+            color: #fffdf8;
+        }
+        .travel-note p { color: rgba(255,255,255,.86); }
+        .travel-note strong { display: block; margin-bottom: 4px; color: white; }
+        .travel-note a { flex: 0 0 auto; color: white; font-weight: 700; text-underline-offset: 4px; }
+        .booking-form .form-group select { min-height: 48px; }
+        @media (max-width: 760px) {
+            .stay-grid { grid-template-columns: 1fr; }
+            .travel-note { align-items: flex-start; flex-direction: column; }
+        }
+        @media (max-width: 420px) {
+            .stay-features { grid-template-columns: 1fr; }
+        }
+        .gallery-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            margin-top: 40px;
+        }
+        .gallery-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+        .gallery-filter {
+            padding: 10px 16px;
+            color: var(--primary-color);
+            background: transparent;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            font: inherit;
+            font-size: .88rem;
+            font-weight: 600;
+        }
+        .gallery-filter[aria-pressed="true"] {
+            color: #fff;
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .gallery-enquiry[hidden], .gallery-item[hidden] { display: none; }
+        @media (max-width: 640px) {
+            .gallery-toolbar { align-items: flex-start; flex-direction: column; }
+        }
     </style>
 </head>
 <body>
@@ -960,6 +1074,7 @@
                 <ul class="nav-links" id="primary-navigation">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Stay</a></li>
+                    <li><a href="#stay-options">Apartments</a></li>
                     <li><a href="#amenities">Amenities</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#location">Location</a></li>
@@ -973,10 +1088,10 @@
     <section id="home" aria-labelledby="hero-title">
         <div class="container hero-content">
             <p class="hero-kicker">A quiet corner of Veerbhadra, Rishikesh</p>
-            <h1 id="hero-title">Find your Rishikesh, a little closer to nature.</h1>
-            <p>A welcoming homestay with mountain views, private terraces and a Ganges-fed stream a short walk away. Choose a studio or 1BHK and make yourself at home.</p>
-            <a href="#contact" class="cta-button">Check dates &amp; rates</a>
-            <a href="#gallery" class="cta-button secondary">Explore the stay</a>
+            <h1 id="hero-title">A pet-friendly homestay in Rishikesh.</h1>
+            <p>A pet-friendly home base in Rishikesh, with two private apartments, mountain-view terraces and the comforts to settle in for a while.</p>
+            <a href="#stay-options" class="cta-button">Find your stay</a>
+            <a href="#contact" class="cta-button secondary">Ask about your dates</a>
         </div>
     </section>
 
@@ -988,7 +1103,7 @@
                     <img src="Images/HomeScreen.jpg" alt="Bright, comfortable living space at Rawat's Oasis homestay in Rishikesh" width="3106" height="4096" loading="lazy">
                 </div>
                 <div class="about-text">
-                    <p>Welcome to Rawat's Oasis, a homestay in Veerbhadra, Rishikesh, for travelers who want room to unwind and an easy base for exploring the city. The home is around a 500-metre walk from a stream fed by the Ganges, with mountain views from the terraces.</p>
+                    <p>Welcome to Rawat's Oasis, a pet-friendly homestay in Veerbhadra, Rishikesh, for travelers who want room to unwind and an easy base for exploring the city. The home is around a 500-metre walk from a stream fed by the Ganges, with mountain views from the terraces.</p>
                     <p>Choose a private 1BHK apartment or a studio apartment. The spaces work well for couples, families and small groups, with room for up to seven guests when booking the full accommodation. The host can help you choose the right space and share current availability.</p>
                     <p>Enjoy a kitchen, air-conditioned bedrooms, Wi-Fi, on-site parking and self check-in. For a budget-friendly stay in Rishikesh, ask us for the current rates for your dates; pricing can vary by season, group size and apartment.</p>
                     <p>Whether you are planning a quiet couple's break, a family visit or a longer stay near the Ganga, Rawat's Oasis offers the comforts of a private home in a calm part of Rishikesh.</p>
@@ -997,6 +1112,49 @@
         </div>
     </section>
     
+    <section id="stay-options" class="stay-section" aria-labelledby="stay-title">
+        <div class="container">
+            <h2 id="stay-title">Choose your stay</h2>
+            <p class="section-intro">Two private apartments, each with its own way to make Rishikesh feel like home. Compare the spaces, then ask us about availability for your trip.</p>
+            <div class="stay-grid">
+                <article class="stay-option">
+                    <img src="Images/1bhk/IMG20250502111420.jpg" alt="Living room and kitchen in the 1BHK apartment at Rawat's Oasis" width="4096" height="3072" loading="lazy">
+                    <div class="stay-option-content">
+                        <p class="stay-label">Room to spread out</p>
+                        <h3>1BHK Apartment</h3>
+                        <p>A comfortable choice for families, friends or longer stays, with a separate bedroom and space to relax together.</p>
+                        <ul class="stay-features">
+                            <li><i class="fas fa-bed" aria-hidden="true"></i><span>King bed + sofa-cum-bed</span></li>
+                            <li><i class="fas fa-bath" aria-hidden="true"></i><span>2 washrooms</span></li>
+                            <li><i class="fas fa-door-open" aria-hidden="true"></i><span>2 balconies</span></li>
+                            <li><i class="fas fa-kitchen-set" aria-hidden="true"></i><span>Working kitchen</span></li>
+                        </ul>
+                        <a class="stay-link" href="#gallery" data-stay="1BHK Apartment">View 1BHK photos &amp; enquire <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="stay-option">
+                    <img class="studio-bedroom-image" src="Images/Studio/IMG_20250501_201912.jpg" alt="King bed in the Studio apartment at Rawat's Oasis" width="3072" height="4096" loading="lazy">
+                    <div class="stay-option-content">
+                        <p class="stay-label">A little mountain-view escape</p>
+                        <h3>Studio Apartment</h3>
+                        <p>A cosy, self-contained space for couples and solo travelers, with two private terraces looking towards the mountains.</p>
+                        <ul class="stay-features">
+                            <li><i class="fas fa-bed" aria-hidden="true"></i><span>King bed</span></li>
+                            <li><i class="fas fa-bath" aria-hidden="true"></i><span>Private washroom</span></li>
+                            <li><i class="fas fa-mountain-sun" aria-hidden="true"></i><span>2 mountain-view terraces</span></li>
+                            <li><i class="fas fa-kitchen-set" aria-hidden="true"></i><span>Small kitchen</span></li>
+                        </ul>
+                        <a class="stay-link" href="#gallery" data-stay="Studio Apartment">View Studio photos &amp; enquire <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="travel-note">
+                <p><strong>Bringing your pet?</strong> Pets are welcome at Rawat's Oasis. Let us know when you enquire so we can help you plan your stay.</p>
+                <a href="https://wa.me/918447154242" target="_blank" rel="noopener noreferrer">Chat with the host <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
     <section id="stats">
         <div class="container">
             <h2>At a glance</h2>
@@ -1023,7 +1181,7 @@
 
     <section id="amenities">
         <div class="container">
-            <h2>Exclusive Features</h2>
+            <h2>Comforts for an easy stay</h2>
             <div class="amenities-grid">
                 <div class="amenity-item">
                     <i class="fas fa-tree"></i>
@@ -1033,7 +1191,7 @@
                 <div class="amenity-item">
                     <i class="fas fa-paw"></i>
                     <h3>Pet Friendly</h3>
-                    <p>We welcome your pets (upon request). Your whole family is invited.</p>
+                    <p>Bring your companion along. Please mention your pet when you contact us.</p>
                 </div>
                 <div class="amenity-item">
                     <i class="fas fa-wifi"></i>
@@ -1062,38 +1220,134 @@
     <section id="gallery">
         <div class="container">
             <h2>The Oasis Portfolio</h2>
+            <div class="gallery-toolbar">
+                <div class="gallery-filters" role="group" aria-label="Filter photos by apartment">
+                    <button class="gallery-filter" type="button" data-gallery-filter="all" aria-pressed="true">All photos</button>
+                    <button class="gallery-filter" type="button" data-gallery-filter="1bhk" aria-pressed="false">1BHK</button>
+                    <button class="gallery-filter" type="button" data-gallery-filter="studio" aria-pressed="false">Studio</button>
+                </div>
+                <a class="stay-link gallery-enquiry" id="gallery-enquiry" href="#contact" hidden>Enquire about this stay <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="studio">
                     <img src="Images/Studio collage.jpg" alt="Studio apartment interior at Rawat's Oasis, Rishikesh" loading="lazy" width="3106" height="4096">
                     <div class="gallery-item-caption">Studio Apartment</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="general">
                     <img src="Images/view 2.jpg" alt="Mountain and valley view near Rawat's Oasis in Rishikesh" loading="lazy" width="4096" height="3072">
                     <div class="gallery-item-caption">Mountain views</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="general">
                     <img src="Images/ganges.jpeg" alt="Ganga riverfront in Rishikesh" loading="lazy" width="1280" height="960">
                     <div class="gallery-item-caption">The Ganga in Rishikesh</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="general">
                     <img src="Images/Parmarth.jpeg" alt="Parmarth Niketan riverfront in Rishikesh" loading="lazy" width="1327" height="805">
                     <div class="gallery-item-caption">Explore Rishikesh</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="1bhk">
                     <img src="Images/1bhk collage.jpg" alt="1BHK apartment at Rawat's Oasis homestay in Rishikesh" loading="lazy" width="3106" height="4096">
                     <div class="gallery-item-caption">1BHK Apartment</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="1bhk">
                     <img src="Images/Bedroom collage.jpg" alt="Bedroom in the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3106" height="4096">
                     <div class="gallery-item-caption">Bedroom Comfort</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="general">
                     <img src="Images/Small terrace 1.jpg" alt="Private terrace with views at the Rishikesh homestay" loading="lazy" width="3072" height="4096">
                     <div class="gallery-item-caption">Private Terrace</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-apartment="general">
                     <img src="Images/Full House.jpg" alt="Exterior of Rawat's Oasis homestay in Veerbhadra, Rishikesh" loading="lazy" width="662" height="1119">
                     <div class="gallery-item-caption">HomeStay</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250502111420.jpg" alt="Photo 1 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="4096" height="3072">
+                    <div class="gallery-item-caption">1BHK Apartment 01</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250502111714.jpg" alt="Photo 2 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="2448" height="3264">
+                    <div class="gallery-item-caption">1BHK Apartment 02</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250502111724.jpg" alt="Photo 3 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">1BHK Apartment 03</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250502111838.jpg" alt="Photo 4 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">1BHK Apartment 04</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250502112219.jpg" alt="Photo 5 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3264" height="2448">
+                    <div class="gallery-item-caption">1BHK Apartment 05</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250503144352.jpg" alt="Photo 6 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="2448" height="3264">
+                    <div class="gallery-item-caption">1BHK Apartment 06</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250503144606.jpg" alt="Photo 7 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">1BHK Apartment 07</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250503201507.jpg" alt="Photo 8 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="2448" height="3264">
+                    <div class="gallery-item-caption">1BHK Apartment 08</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG20250725092500.jpg" alt="Photo 9 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">1BHK Apartment 09</div>
+                </div>
+                <div class="gallery-item" data-apartment="1bhk">
+                    <img src="Images/1bhk/IMG_20250503_145826.jpg" alt="Photo 10 of the 1BHK apartment at Rawat's Oasis" loading="lazy" width="3264" height="2448">
+                    <div class="gallery-item-caption">1BHK Apartment 10</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250501145828.jpg" alt="Photo 1 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 01</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250501150044.jpg" alt="Photo 2 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 02</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250501150354.jpg" alt="Photo 3 of the Studio apartment at Rawat's Oasis" loading="lazy" width="4096" height="3072">
+                    <div class="gallery-item-caption">Studio Apartment 03</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250503195716.jpg" alt="Photo 4 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 04</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250725091917.jpg" alt="Photo 5 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 05</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20250725091922.jpg" alt="Photo 6 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 06</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG20260704204051.jpg" alt="Photo 7 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 07</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG_20250501_195931.jpg" alt="Photo 8 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 08</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG_20250501_200030.jpg" alt="Photo 9 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 09</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG_20250501_200615.jpg" alt="Photo 10 of the Studio apartment at Rawat's Oasis" loading="lazy" width="4096" height="3072">
+                    <div class="gallery-item-caption">Studio Apartment 10</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG_20250501_201823.jpg" alt="Photo 11 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 11</div>
+                </div>
+                <div class="gallery-item" data-apartment="studio">
+                    <img src="Images/Studio/IMG_20250501_201912.jpg" alt="Photo 12 of the Studio apartment at Rawat's Oasis" loading="lazy" width="3072" height="4096">
+                    <div class="gallery-item-caption">Studio Apartment 12</div>
                 </div>
             </div>
         </div>
@@ -1158,6 +1412,10 @@
                     <summary>Which amenities are available?</summary>
                     <p>The homestay offers Wi-Fi, a kitchen, air-conditioned bedrooms, on-site parking, private terraces and self check-in. Contact the host if you need details about a particular facility.</p>
                 </details>
+                <details>
+                    <summary>Can I bring my pet?</summary>
+                    <p>Yes, pets are welcome. Please mention your pet when you enquire so the host can help you plan your stay.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -1212,7 +1470,16 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Accommodation preference (1BHK apartment, studio apartment or both) and special requests</label>
+                            <label for="stay-type">Which apartment would you like?</label>
+                            <select id="stay-type" name="stay_type" required>
+                                <option value="">Choose an apartment</option>
+                                <option value="1BHK Apartment">1BHK Apartment</option>
+                                <option value="Studio Apartment">Studio Apartment</option>
+                                <option value="Either / both">Either / both</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Anything else we should know? (including pet details)</label>
                             <textarea id="message" name="message" rows="3"></textarea>
                         </div>
                         <button type="submit" class="submit-button" id="submit-btn">Submit Reservation Request</button>
@@ -1367,6 +1634,44 @@
 
         primaryNavigation.querySelectorAll('a').forEach(function(link) {
             link.addEventListener('click', closeNavigation);
+        });
+
+        const stayTypeInput = document.getElementById('stay-type');
+        const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+        const galleryFilters = Array.from(document.querySelectorAll('.gallery-filter'));
+        const galleryEnquiry = document.getElementById('gallery-enquiry');
+
+        const applyGalleryFilter = (category) => {
+            galleryItems.forEach(function(item) {
+                item.hidden = category !== 'all' && item.dataset.apartment !== category;
+            });
+            galleryFilters.forEach(function(button) {
+                button.setAttribute('aria-pressed', String(button.dataset.galleryFilter === category));
+            });
+            galleryEnquiry.hidden = category === 'all';
+            galleryEnquiry.dataset.stay = category === '1bhk' ? '1BHK Apartment' : 'Studio Apartment';
+        };
+
+        galleryFilters.forEach(function(button) {
+            button.addEventListener('click', function() {
+                applyGalleryFilter(button.dataset.galleryFilter);
+            });
+        });
+
+        applyGalleryFilter('all');
+
+        document.querySelectorAll('.stay-option .stay-link[data-stay]').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const category = link.dataset.stay === '1BHK Apartment' ? '1bhk' : 'studio';
+                stayTypeInput.value = link.dataset.stay;
+                applyGalleryFilter(category);
+                document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        galleryEnquiry.addEventListener('click', function() {
+            stayTypeInput.value = galleryEnquiry.dataset.stay;
         });
 
         document.addEventListener('keydown', function(event) {
